@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Home - To Do</title>
+
+  <style>
+    .submit {
+      box-shadow: 0 9px #999;
+    }
+
+    .submit:hover {
+      background-color: rgb(53, 52, 52);
+    }
+
+    .submit:hover>.sp {
+
+      color: aqua;
+
+    }
+
+    .submit:active {
+      box-shadow: 0 6px #666;
+      transform: translateY(4px);
+    }
+
+    .none:hover {
+      color: rgb(38, 100, 54);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div style="text-align: center;">
+
+    <span style="font-size: 50px; font-weight: bold; color: rgb(59, 177, 29);"><a href="/" class="none">Todo</a></span>
+
+  </div>
+
+  <br>
+
+  {% block body %}
+    
+  {% endblock body %}
+
+</body>
+</html>
